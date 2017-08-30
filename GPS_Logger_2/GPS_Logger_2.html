@@ -1,0 +1,64 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <script src='file:///android_asset/app.js'></script>
+    <script src="javascripts/jquery.min.js"></script>
+    <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+</head>
+<script>  
+    var loc;   
+    //Called after application is started.
+    function OnStart () {
+        loc = app.CreateLocator("GPS");
+        app.SetOrientation ("Portrait");
+    }
+</script>
+<body onload="app.Start()">
+    <div id="naglowek">
+            <div id="tytul">GPS Logger</div>
+    </div>
+    
+    <div id="app">    
+    
+        <div id="menu">
+            <a class="menuItem" href="#">First item</a><br><br>
+            <a class="menuItem" href="#">Second item</a><br><br>
+            <a class="menuItem" href="#">Third item</a>
+        </div>
+        
+        <div id="mapa"><br><br><br>Google maps not available</div>
+        
+        <div id="stats"> 
+            
+            <div id="startButtonDiv">
+                <button id="startButton"><i class="fa fa-play fa-3x"></i></button>
+                <button id="stopButton"><i class="fa fa-close fa-3x"></i></button>
+                <br><br>
+            </div>
+        
+            <div id="distanceWrapperDiv">
+                <p id="distance">Distance:</p>
+            </div>
+        
+            <div id="timeWrapperDiv">
+                <p id="time">Time:</p>
+            </div>
+        
+            <div id="paceWrapperDiv">
+                <p id="pace">Pace:</p>
+            </div>
+        
+            <div id="lastLapWrapperDiv">
+                <p id="lap">Last lap:</p>
+            </div>
+            
+        </div>
+        
+    </div>
+    <script src="javascripts/initMap.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=MY_GOOGLE_MAPS_KEY&amp;callback=initMap"></script>    
+    <script src="javascripts/onStart.js"></script>
+</body>
+</html>

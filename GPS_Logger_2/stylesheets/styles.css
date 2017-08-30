@@ -1,0 +1,180 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**************** my styles *****************************/
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 50px;
+  background-color: dimgrey;
+  font-family: "Open Sans",arial,sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+#naglowek {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  background-color: dimgrey;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  border-bottom-style: solid;
+  border-color: white;
+  border: 1px;
+}
+
+#tytul {
+  display: inline; 
+  line-height: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+
+#mapButton, #statsButton {
+  font-size: 0.8em;
+  color: white;
+  background-color: dimgrey;
+  border: 0;
+  display: inline; 
+  line-height: 50px;
+  height: 50px;
+  float: right;
+  margin-right: 10px;
+}
+
+#statsButton {
+    display: none;
+}
+
+#mapButton {
+    
+}
+
+#app {
+    text-align: center;
+    color: white;
+    background-color: dimgrey;
+}
+
+#startButtonDiv {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    border: 1px;
+    border-bottom-style: solid;
+    border-color: white;
+}
+
+#startButton {
+    color: gray;
+    background-color: dimgrey;
+    border: 0;
+}
+
+#stopButton {
+    display: none;
+    color: red;
+    background-color: dimgrey;
+    border: 0;
+}
+
+#menu {
+    display: none;
+    position: fixed;
+    top: 51px;
+    left: 35%;
+    color: white;
+    background-color: dimgrey;
+    width: 65%;
+    height: 60%;
+    float: right;
+    padding: 10px;
+}
+
+.menuItem {
+    color: white;
+    background-color: dimgrey;
+    float: left;
+}
+
+#mapa {
+    border: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: white;
+    height: 50%;
+    width: 100%;
+    color: dimgrey;
+    background-color: white;
+}
+
+#stats {  
+     
+    height: 40%;
+    width: 100%;
+}
+
+#timeWrapperDiv, #paceWrapperDiv, 
+#positionWrapperDiv, #lastLapWrapperDiv {    
+    margin-top: 10px;
+    font-size: 1.3em;
+}
+
+#distanceWrapperDiv {
+    margin-top: 10px;
+    font-size: 1.9em;
+}
